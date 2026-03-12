@@ -1,0 +1,5 @@
+rancher_api_url    = "https://10.161.96.101.sslip.io"
+rancher_access_key = "token-5nrth"
+rancher_secret_key = "your-secret-key-here"
+rancher_insecure   = true
+rancher_timeout    = "30m"
