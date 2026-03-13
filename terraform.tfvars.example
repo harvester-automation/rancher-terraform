@@ -3,3 +3,24 @@ rancher_access_key = "token-5nrth"
 rancher_secret_key = "your-secret-key-here"
 rancher_insecure   = true
 rancher_timeout    = "30m"
+
+cluster_name       = "rke2-terraform"
+control_plane_count = 1
+worker_count       = 0
+
+# VM specifications
+control_plane_vm_spec = {
+  cpu_count   = "4"
+  memory_size = "8"
+  disk_size   = 100
+}
+
+worker_vm_spec = {
+  cpu_count   = "4"
+  memory_size = "8"
+  disk_size   = 100
+}
+
+vm_image_name   = "vm-ns/image-tth9v"
+vm_network_name = "vm-ns/service-vm-vlan"
+vm_namespace    = "vm-ns"
